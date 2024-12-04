@@ -36,11 +36,3 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
-
-    - uses: OctoMind-dev/automagically-action-execute@v2
-      name: Run Octomind tests
-      with:
-        url: https://sker65.github.io/test-app
-        token: ${{ secrets.AUTOMAGICALLY_TOKEN }}
-        testTargetId: c40207d8-faf7-4197-b860-478c6d5acd0c
-        blocking: false
