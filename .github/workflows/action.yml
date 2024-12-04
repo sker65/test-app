@@ -11,13 +11,11 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - run : git config user.name sker65
-      shell: bash
-    - run : git config user.email sker65@gmail.com
-      shell: bash
-    - run : npm i
-      shell: bash
-    - run : npm run deploy
+    - run: |
+        git config --global user.name sker65
+        git config --global  user.email sker65@gmail.com
+        npm i
+        npm run deploy
       shell: bash
     - uses: OctoMind-dev/automagically-action-execute@v2
       with:
