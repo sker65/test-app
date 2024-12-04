@@ -11,11 +11,14 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+    - run : git config user.name github-actions
+      shell: bash
+    - run : git config user.email github-actions@github.com
+      shell: bash
     - run : npm i
       shell: bash
     - run : npm run deploy
       shell: bash
-
     - uses: OctoMind-dev/automagically-action-execute@v2
       with:
         url: https://sker65.github.io/test-app
