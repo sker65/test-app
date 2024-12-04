@@ -11,6 +11,7 @@ function App() {
           This is an example app to show the integration of octomind ai e2e testing
           in your github workflow
         </p>
+        <p>Test Paragraph</p>
         <a
           className="App-link"
           href="https://reactjs.org"
