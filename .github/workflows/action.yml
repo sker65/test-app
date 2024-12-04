@@ -11,13 +11,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - run: |
-        git config --global user.name sker65
-        git config --global  user.email sker65@gmail.com
-        npm i
-        npm run deploy
-      shell: bash
+    - name: Build and Deploy React app to GitHub Pages
+      uses: omkartapale/react-deployment-gh-pages@v1.0.0
     - uses: OctoMind-dev/automagically-action-execute@v2
+      name: Run Octomind tests
       with:
         url: https://sker65.github.io/test-app
         token: ${{ secrets.AUTOMAGICALLY_TOKEN }}
