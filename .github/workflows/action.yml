@@ -11,9 +11,9 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - run : git config user.name github-actions
+    - run : git config user.name sker65
       shell: bash
-    - run : git config user.email github-actions@github.com
+    - run : git config user.email sker65@gmail.com
       shell: bash
     - run : npm i
       shell: bash
