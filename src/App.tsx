@@ -8,7 +8,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          This is an example app to show the integration of octomind ai e2e testing
+          in your github workflow
         </p>
         <a
           className="App-link"
